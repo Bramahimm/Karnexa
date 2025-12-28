@@ -22,6 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="icon" href="karnexa.ico"/>
+      </head>
       <body className={`${inter.className} min-h-screen antialiased text-white bg-linear-to-br from-karnexa-dark via-karnexa-void to-karnexa-deep`}>
         <AnimationProvider>
           <CustomCursor />

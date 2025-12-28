@@ -17,7 +17,7 @@ export default function ProjectGrid() {
       {projects.map((project) => (
         <Link href={`/projects/${project.id}`} key={project.id} scroll={true}>
           <motion.div
-            whileHover={{ scale: 0.98 }}
+            whileHover={{ scale: 0.95 }}
             className="group relative aspect-video overflow-hidden rounded-2xl bg-muted"
           >
             <motion.img
