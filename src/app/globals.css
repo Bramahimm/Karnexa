@@ -47,7 +47,7 @@
 }
 
 @theme {
-  --color-background: #1E1228;
+  --color-background: #1e1228;
   --color-foreground: #ffffff;
 
   --color-accent-primary: #00f0ff;
@@ -64,7 +64,7 @@
   --color-karnexa-purple: #8121af;
   --color-karnexa-magenta: #89229d;
   --color-karnexa-void: #3c1360;
-  --color-karnexa-pink: #AA0AAD;
+  --color-karnexa-pink: #aa0aad;
 }
 
 :root {
@@ -142,6 +142,16 @@
     cursor: none !important;
   }
   body {
-    @apply bg-background text-foreground;
+    background: linear-gradient(
+      135deg,
+      var(--color-karnexa-deep) 20%,
+      var(--color-karnexa-magenta) 30%,
+      var(--color-karnexa-purple) 45%,
+      var(--color-karnexa-void) 60%,
+      var(--color-karnexa-pink) 100%
+    );
+    background-size: 100% 200%;
+    background-attachment: scroll;
+    @apply min-h-screen antialiased text-white;
   }
 }

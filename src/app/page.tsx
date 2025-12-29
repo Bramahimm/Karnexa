@@ -22,11 +22,6 @@ export default function Home() {
         </div>
       </section>
       <TeamSection />
-      <footer className="h-[50vh] w-full flex items-center justify-center relative overflow-hidden">
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-center">
-          <p className="text-white/40 text-sm">© 2025 Karnexa. All rights reserved.</p>
-        </div>
-      </footer>
     </main>
   );
 }
