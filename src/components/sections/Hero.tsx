@@ -77,7 +77,7 @@ export default function Hero() {
         {/* TOP HIERARCHY: Positioning */}
         <div className="flex flex-col md:flex-row items-center gap-4 mb-8 md:mb-12 hero-sub">
           <span className="text-[10px] uppercase tracking-[0.5em] text-karnexa-pink font-bold">
-            EST. 2024
+            EST. 2025
           </span>
           <div className="h-[1px] md:h-3 w-12 md:w-[1px] bg-white/20" />{" "}
           {/* Responsif jadi vertikal di md+ */}
