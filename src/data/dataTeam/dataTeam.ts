@@ -2,7 +2,7 @@
 export const dataTeam = [
   {
     name: "Bram Ahimsa Lafayet",
-    role: "JavaScript Stack Dev",
+    role: "Full Stack Dev",
     github: "https://github.com/bramahimm",
     instagram: "https://instagram.com/bramahimm",
     photo: "/team/bram.jpg",

@@ -15,7 +15,7 @@ export default function TeamSection() {
           viewport={{ once: true }}
           className="text-4xl md:text-6xl font-bold text-center mb-20 uppercase tracking-tighter"
         >
-          Meet Our Team
+          Meet Our <span className="italic">Team</span>
         </motion.h2>
 
         {/* MOBILE & TABLET KECIL → 1 KOLOM */}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-// Components
+import Footer from "@/components/shared/Footer";
 import AnimationProvider from "@/components/shared/AnimationProvider";
 import { CursorProvider } from "@/components/shared/CursorProvider";
 import Navbar from "@/components/shared/Navbar";
@@ -32,6 +32,7 @@ export default function RootLayout({
             <SceneWrapper />
             <Navbar />
             <main className="relative z-10">{children}</main>
+            <Footer />
           </CursorProvider>
         </AnimationProvider>
         <Analytics />

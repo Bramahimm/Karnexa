@@ -144,14 +144,20 @@
   body {
     background: linear-gradient(
       135deg,
-      var(--color-karnexa-deep) 20%,
-      var(--color-karnexa-magenta) 30%,
-      var(--color-karnexa-purple) 45%,
-      var(--color-karnexa-void) 60%,
-      var(--color-karnexa-pink) 100%
+      var(--color-karnexa-dark) 1%,
+      var(--color-karnexa-void) 30%,
+      var(--color-karnexa-magenta) 55%,
+      var(--color-karnexa-deep) 60%,
+      var(--color-karnexa-dark) 100%
     );
     background-size: 100% 200%;
     background-attachment: scroll;
     @apply min-h-screen antialiased text-white;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
   }
 }
