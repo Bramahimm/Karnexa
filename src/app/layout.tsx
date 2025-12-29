@@ -4,15 +4,16 @@ import "./globals.css";
 
 // Components
 import AnimationProvider from "@/components/shared/AnimationProvider";
+import { CursorProvider } from "@/components/shared/CursorProvider";
 import Navbar from "@/components/shared/Navbar";
-import CustomCursor from "@/components/ui/CustomCursor";
+import SceneWrapper from "@/components/canvas/SceneWrapper";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "KARNEXA | Next Career. Real Action.",
-  description:
-    "A premium portfolio experience for the next generation of careers.",
+  description: "A premium portfolio experience.",
 };
 
 export default function RootLayout({
@@ -21,18 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <head>
-        <link rel="icon" href="karnexa.ico"/>
-      </head>
-      <body className={`${inter.className} min-h-screen antialiased text-white bg-linear-to-br from-karnexa-dark via-karnexa-void to-karnexa-deep`}>
+    <html lang="en">
+      <body>
         <AnimationProvider>
-          <CustomCursor />
-          <Navbar />
-          <div className="relative z-10">
-            {children}{" "}
-          </div>
+          <CursorProvider>
+            <SceneWrapper />
+            <Navbar />
+            <main className="relative z-10">{children}</main>
+          </CursorProvider>
         </AnimationProvider>
+        <Analytics />
       </body>
     </html>
   );

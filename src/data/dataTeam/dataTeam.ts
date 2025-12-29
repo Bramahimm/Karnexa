@@ -2,7 +2,7 @@
 export const dataTeam = [
   {
     name: "Bram Ahimsa Lafayet",
-    role: "Full Stack Dev",
+    role: "JavaScript Stack Dev",
     github: "https://github.com/bramahimm",
     instagram: "https://instagram.com/bramahimm",
     photo: "/team/bram.jpg",
@@ -20,5 +20,19 @@ export const dataTeam = [
     github: "https://github.com/Putraa70",
     instagram: "https://www.instagram.com/fr.pttraaa",
     photo: "/team/putra.jpeg",
+  },
+    {
+    name: "Hermawan Yogi Wibisono",
+    role: "UI/UX Designer",
+    github: "https://github.com/wibii02",
+    instagram: "https://www.instagram.com/wiibbii._",
+    photo: "/team/wibi.jpeg",
+  },
+    {
+    name: "Risky Firmansyah",
+    role: "UI/UX Designer",
+    github: "https://github.com/RizkyFirmansyah-com",
+    instagram: "https://www.instagram.com/rkyjr_",
+    photo: "/team/riski.jpeg",
   },
 ];
