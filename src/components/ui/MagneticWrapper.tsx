@@ -4,12 +4,14 @@ import React, { useRef } from "react";
 import { motion, useSpring, useReducedMotion } from "framer-motion";
 import { useCursor } from "@/components/shared/CursorProvider";
 
+
 export default function MagneticWrapper({
   children,
   className,
 }: {
   children: React.ReactNode;
   className?: string;
+  strength?: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const { setCursorState } = useCursor();
@@ -33,7 +35,7 @@ export default function MagneticWrapper({
     if (distance < 60) {
       x.set(distanceX * 0.25);
       y.set(distanceY * 0.25);
-      setCursorState("active"); 
+      setCursorState("active");
     } else {
       reset();
     }
