@@ -26,13 +26,13 @@ export const dataTeam = [
     role: "UI/UX Designer",
     github: "https://github.com/wibii02",
     instagram: "https://www.instagram.com/wiibbii._",
-    photo: "/team/wibi.jpeg",
+    photo: "/team/wibi.jpg"
   },
     {
     name: "Risky Firmansyah",
     role: "UI/UX Designer",
     github: "https://github.com/RizkyFirmansyah-com",
     instagram: "https://www.instagram.com/rkyjr_",
-    photo: "/team/riski.jpg",
+    photo: "/team/riski.png",
   },
 ];
