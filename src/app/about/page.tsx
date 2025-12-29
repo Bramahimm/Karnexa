@@ -33,8 +33,7 @@ export default function AboutPage() {
   return (
     <main
       ref={containerRef}
-      className="min-h-screen pt-24 pb-20 px-6 md:pt-40 md:pb-32 md:px-10 max-w-7xl mx-auto"
-    >
+      className="min-h-screen pt-24 pb-20 px-6 md:pt-40 md:pb-32 md:px-10 max-w-7xl mx-auto">
       {/* SECTION 1: Hero */}
       <section className="mb-24 md:mb-40 relative z-10 flex flex-col items-center text-center">
         <div className="reveal-text mb-6 px-4 py-1 border border-karnexa-magenta rounded-full text-xs tracking-[0.4em] text-white bg-karnexa-pink/5">
@@ -58,8 +57,7 @@ export default function AboutPage() {
         {/* Pilar 1: Digital Solution */}
         <motion.div
           whileHover={{ y: -10 }}
-          className="group p-8 sm:p-10 rounded-[2.5rem] bg-white/[0.02] border border-white/10 backdrop-blur-3xl hover:border-karnexa-pink/50 transition-all duration-500"
-        >
+          className="group p-8 sm:p-10 rounded-[2.5rem] bg-white/4 border border-white/10 backdrop-blur-3xl hover:border-karnexa-pink/50 transition-all duration-500">
           <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-karnexa-pink/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
             <Globe className="text-karnexa-pink w-7 h-7 sm:w-8 sm:h-8" />
           </div>
@@ -72,7 +70,10 @@ export default function AboutPage() {
           </p>
           <div className="space-y-5">
             <div className="flex items-start gap-4">
-              <Code2 className="text-karnexa-pink mt-1 flex-shrink-0" size={20} />
+              <Code2
+                className="text-karnexa-pink mt-1 flex-shrink-0"
+                size={20}
+              />
               <div>
                 <h4 className="font-bold text-white uppercase text-sm">
                   Web & App Development
@@ -101,8 +102,7 @@ export default function AboutPage() {
         {/* Pilar 2: Academic Expert */}
         <motion.div
           whileHover={{ y: -10 }}
-          className="group p-8 sm:p-10 rounded-[2.5rem] bg-white/[0.02] border border-white/10 backdrop-blur-3xl hover:border-karnexa-pink/50 transition-all duration-500"
-        >
+          className="group p-8 sm:p-10 rounded-[2.5rem] bg-white/4 border border-white/10 backdrop-blur-3xl hover:border-karnexa-pink/50 transition-all duration-500">
           <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-karnexa-pink/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
             <GraduationCap className="text-karnexa-pink w-7 h-7 sm:w-8 sm:h-8" />
           </div>
@@ -116,7 +116,10 @@ export default function AboutPage() {
           </p>
           <div className="space-y-5">
             <div className="flex items-start gap-4">
-              <BookOpen className="text-karnexa-pink mt-1 flex-shrink-0" size={20} />
+              <BookOpen
+                className="text-karnexa-pink mt-1 flex-shrink-0"
+                size={20}
+              />
               <div>
                 <h4 className="font-bold text-white uppercase text-sm">
                   Joki Tugas All Subject
@@ -128,7 +131,10 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <ShieldCheck className="text-karnexa-pink mt-1 flex-shrink-0" size={20} />
+              <ShieldCheck
+                className="text-karnexa-pink mt-1 flex-shrink-0"
+                size={20}
+              />
               <div>
                 <h4 className="font-bold text-white uppercase text-sm">
                   Cepat & Aman
@@ -144,9 +150,9 @@ export default function AboutPage() {
       </div>
 
       {/* SECTION 3: THE PROMISE - Stats */}
-      <section className="mb-28 md:mb-40 py-16 sm:py-20 border-y border-white/10 backdrop-blur-sm">
-        <h2 className="text-center text-xs uppercase tracking-[0.8em] text-white/40 mb-12 sm:mb-16">
-          The Karnexa Way
+      <section className="mb-28 md:mb-40 py-16 sm:py-20 border-y border-white/20 backdrop-blur-md bg-white/1">
+        <h2 className="text-center text-xs uppercase tracking-[0.8em] text-white mb-12 sm:mb-16">
+          Karnexa Rate
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
           {[
@@ -175,8 +181,7 @@ export default function AboutPage() {
         <MagneticWrapper className="inline-block">
           <Link
             href="/projects"
-            className="px-10 py-5 sm:px-4 sm:py-4 text-base sm:text-lg bg-karnexa-purple text-black hover:bg-karnexa-void hover:text-white rounded-full font-bold uppercase tracking-widest transition-all duration-500 shadow-[0_20px_50px_rgba(255,255,255,0.1)] active:scale-95 block w-fit mx-auto"
-          >
+            className="px-10 py-5 sm:px-6 sm:py-4 text-base sm:text-lg bg-karnexa-purple text-white hover:bg-karnexa-void hover:text-white rounded-full font-semibold tracking-wide transition-all duration-500 shadow-[0_20px_50px_rgba(255,255,255,0.1)] active:scale-95 block w-fit mx-auto">
             Eksplor Lebih Lanjut
           </Link>
         </MagneticWrapper>

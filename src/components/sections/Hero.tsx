@@ -28,7 +28,7 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.08),transparent_60%)]" />
       <div className="relative z-20 text-center">
-        <h1 className="text-[12vw] font-black tracking-tighter leading-none uppercase text-white">
+        <h1 className="text-[5vw] font-black tracking-tighter leading-none uppercase text-white">
           {"KARNEXA".split("").map((c, i) => (
             <span key={i} className="char inline-block">
               {c}

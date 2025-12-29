@@ -33,6 +33,6 @@ export const dataTeam = [
     role: "UI/UX Designer",
     github: "https://github.com/RizkyFirmansyah-com",
     instagram: "https://www.instagram.com/rkyjr_",
-    photo: "/team/riski.jpeg",
+    photo: "/team/riski.jpg",
   },
 ];
